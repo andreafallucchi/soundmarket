@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoundMarket — Marketplace certificato per la musica usata</title>
+<meta name="description" content="Compravendita C2C di strumenti musicali, vinili e hardware con grading professionale, Protezione Acquisti e pagamenti in escrow.">
+<meta name="theme-color" content="#0F4C5C">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F4C5C'/%3E%3Cpath d='M12 24V9l11-2v13' stroke='%23E8B04B' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='9.5' cy='24' r='3' fill='%23E8B04B'/%3E%3Ccircle cx='20.5' cy='20' r='3' fill='%23E8B04B'/%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:title" content="SoundMarket — Marketplace certificato per la musica usata">
+<meta property="og:description" content="Strumenti, vinili e hardware con grading professionale e Protezione Acquisti.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://soundmarket.example">
+<meta property="og:image" content="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1200&q=80">
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="site-top">
+  <header class="header" id="appHeader" role="banner"></header>
+  <nav class="catbar" id="catBar" aria-label="Categorie"></nav>
+</div>
+
+<main id="app" class="shell" role="main"></main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid shell">
+    <div class="footer-brand">
+      <div class="footer-logo" id="footerLogo"></div>
+      <p class="footer-tag">Piattaforma C2C per la compravendita di beni musicali di seconda mano. Ogni transazione è tutelata da Protezione Acquisti e deposito in escrow.</p>
+      <div class="footer-trust" id="footerTrust"></div>
+      <div class="footer-legal">
+        <strong>SoundMarket S.r.l.</strong><br>
+        Sede legale: Via Montenapoleone 8, 20121 Milano (MI)<br>
+        P.IVA 04871220968 · REA MI-2784512<br>
+        Capitale sociale: € 50.000 i.v.
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Piattaforma</h4>
+      <button data-action="modal" data-modal="protezione">Protezione Acquisti Musicista</button>
+      <button data-action="modal" data-modal="imballaggio">Standard Imballaggio Corrieri</button>
+      <button data-action="modal" data-modal="grading">Guida al Grading</button>
+      <button data-action="modal" data-modal="spedizioni">Spedizioni e Tracking</button>
+    </div>
+    <div class="footer-col">
+      <h4>Operatività</h4>
+      <button data-action="route" data-route="vendi">Pubblica inserzione</button>
+      <button data-action="route" data-route="cerca">Ricerca avanzata</button>
+      <button data-action="route" data-route="preferiti">Articoli salvati</button>
+      <button data-action="route" data-route="profilo">Area personale</button>
+    </div>
+    <div class="footer-col">
+      <h4>Legale</h4>
+      <button data-action="modal" data-modal="termini">Termini e Condizioni</button>
+      <button data-action="modal" data-modal="privacy">Informativa Privacy</button>
+      <button data-action="modal" data-modal="recessi">Politica di Rimborso</button>
+      <button data-action="modal" data-modal="assistenza">Centro Assistenza</button>
+    </div>
+  </div>
+  <div class="footer-base shell">
+    <span>© 2024 SoundMarket S.r.l. — Tutti i diritti riservati.</span>
+    <span class="tabular">P.IVA 04871220968 · SDI: SUBM70N</span>
+  </div>
+</footer>
+
+<div id="modalRoot"></div>
+<div id="lightboxRoot"></div>
+<div id="toastRoot" aria-live="polite"></div>
+
+<noscript><div class="noscript">SoundMarket richiede JavaScript abilitato per funzionare correttamente. Attivare JavaScript e ricaricare la pagina.</div></noscript>
+
+<script src="./js/icons.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/auth.js"></script>
+<script src="./js/chat.js"></script>
+<script src="./js/payments.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
